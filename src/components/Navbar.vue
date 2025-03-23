@@ -1,12 +1,12 @@
 <template>
   <nav
-    class="fixed top-0 left-0 w-full bg-white z-50 transition-all duration-1000 ease-out"
-    :class="{ 'shadow-xl': store.navbarShadow, 'bg-[#90e0ef]': !store.navbarShadow }"
+    class="fixed top-0 left-0 w-full bg-white z-50 transition-all duration-300 ease-out"
+    :class="{ 'shadow-xl': store.navbarShadow, 'bg-theme': !store.navbarShadow }"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         <!-- Logo/Name -->
-        <a href="#" class="text-xl font-bold text-blue-900">HLP</a>
+        <a href="#" class="text-xl font-bold text-blue-900">Welcome !</a>
 
         <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-8">

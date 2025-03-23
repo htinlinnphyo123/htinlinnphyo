@@ -1,12 +1,8 @@
 <template>
-  <section
-    id="greeting"
-    class="h-screen lg:flex items-center justify-center"
-    style="background-color: #90e0ef"
-  >
-    <div class="flex-1 px-6 lg:px-20">
-      <h1 class="text-4xl font-bold mb-6 text-gray-800 font-mono">Hello, I am Htin Linn Phyo</h1>
-      <p class="greeting">Fullstack Developer</p>
+  <section id="greeting" class="h-screen lg:flex items-center justify-center bg-theme">
+    <div class="flex-1 px-6 lg:px-20 pt-32 lg:pt-0">
+      <h1 class="text-4xl font-bold mb-6 text-gray-800 font-mono leading-[3rem]">Hello, I am Htin Linn Phyo</h1>
+      <!-- <p class="greeting">Fullstack Developer</p> -->
       <p class="text-lg text-gray-600 leading-relaxed fade-in-up">
         Fullstack Developer who loves building smooth and user-friendly web applications. Skilled in
         Vue 3, Laravel, PHP, MySQL, and cloud technologies, creating strong solutions from frontend
@@ -53,7 +49,7 @@ onMounted(() => {
       })
     },
     {
-      threshold: 0,
+      threshold: 0.15,
     }
   )
   if (greetingEL) {
