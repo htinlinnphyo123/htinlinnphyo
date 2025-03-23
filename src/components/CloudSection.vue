@@ -1,11 +1,5 @@
 <template>
-  <section
-    class="h-screen flex transition-all duration-300 ease-in-out"
-    :class="{
-      'opacity-100': active,
-      'opacity-80': !active,
-    }"
-  >
+  <section class="h-screen flex transition-all duration-300 ease-in-out">
     <div class="flex-1 p-16 flex flex-col justify-center">
       <div class="max-w-2xl">
         <h1 class="text-4xl font-bold mb-6 text-gray-800">Cloud Architecture</h1>
@@ -35,8 +29,4 @@
 
 <script setup lang="ts">
 import TechBadge from './TechBadge.vue'
-
-defineProps({
-  active: Boolean,
-})
 </script>

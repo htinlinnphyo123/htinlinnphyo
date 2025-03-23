@@ -1,5 +1,8 @@
 <template>
-  <nav class="fixed top-0 left-0 w-full bg-white z-50 border-b border-gray-200">
+  <nav
+    class="fixed top-0 left-0 w-full bg-white z-50 transition-all duration-1000 ease-out"
+    :class="{ 'shadow-xl': store.navbarShadow, 'bg-[#90e0ef]': !store.navbarShadow }"
+  >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         <!-- Logo/Name -->
@@ -61,9 +64,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { navbarShadow } from '@/stores/navbarshadow'
 
 const isMenuOpen = ref(false)
+const store = navbarShadow()
 
 const menuItems = [
   { name: 'Home', href: '#home' },

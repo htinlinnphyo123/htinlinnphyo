@@ -1,6 +1,6 @@
 <template>
   <main ref="scrollContainer">
-    <FullstackSection />
+    <Greeting />
     <CloudSection />
     <CloudSection />
   </main>
@@ -8,6 +8,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import FullstackSection from './FullstackSection.vue'
+import Greeting from './Greeting.vue'
 import CloudSection from './CloudSection.vue'
 </script>
