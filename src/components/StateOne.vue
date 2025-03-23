@@ -1,10 +1,13 @@
 <template>
-  <div>
-    <p>Count from store: {{ store.count }}</p>
-  </div>
+  <main ref="scrollContainer">
+    <FullstackSection />
+    <CloudSection />
+    <CloudSection />
+  </main>
 </template>
-<script setup>
-import { useCounterStore } from '@/stores/counter.ts'
 
-const store = useCounterStore()
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import FullstackSection from './FullstackSection.vue'
+import CloudSection from './CloudSection.vue'
 </script>
