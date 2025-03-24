@@ -2,7 +2,7 @@
   <nav
     class="fixed top-0 left-0 w-full bg-white z-50 transition-all duration-300 ease-out"
     :class="[
-      store.navbarShadow ? 'shadow-xl' : 'bg-sky-300'
+      store.navbarShadow ? 'shadow-xl' : ' '
     ]"
   >
     <div class="container mx-auto px-4">
