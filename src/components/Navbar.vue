@@ -1,7 +1,9 @@
 <template>
   <nav
     class="fixed top-0 left-0 w-full bg-white z-50 transition-all duration-300 ease-out"
-    :class="{ 'shadow-xl': store.navbarShadow, 'bg-theme': !store.navbarShadow }"
+    :class="[
+      store.navbarShadow ? 'shadow-xl' : 'bg-sky-300'
+    ]"
   >
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between h-16">

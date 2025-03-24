@@ -1,5 +1,5 @@
 <template>
-  <section id="greeting" class="h-screen lg:flex items-center justify-center bg-theme">
+  <section id="greeting" class="h-screen lg:flex items-center justify-center bg-sky-300">
     <div class="flex-1 px-6 lg:px-20 pt-32 lg:pt-0">
       <h1 class="text-4xl font-bold mb-6 text-gray-800 font-mono leading-[3rem]">Hello, I am Htin Linn Phyo</h1>
       <!-- <p class="greeting">Fullstack Developer</p> -->
